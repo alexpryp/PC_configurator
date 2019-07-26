@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arila, sans-serif;
+	padding: 10px;
+}
+
+h1, h2 {
+		text-align: center;
+}
+
+#configurator {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#imgHolder, #chassisSelector {
+	text-align: center;
+	margin: 10px;
+}
+
+#imgHolder {
+	height: 500px;
+}
+
+#imgHolder img {
+	height: inherit;
+}
+
+#chassisSelector {
+	display: flex;
+	justify-content: center;
+}
+
+#chassisSelector img {
+	width: 100px
+}
+
+#chassisSelector img:hover {
+	cursor: pointer;
+}
