@@ -1,73 +1,138 @@
+$mainTextColor: #000;
+$headerTextColor: #fff;
+$headerBackgroundColor: #4CAF50;
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: Arila, sans-serif;
-	padding: 10px;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
 }
 
-h1, h2 {
+h1, h2, h3, h4, footer {
+		color: $headerTextColor;
+		background-color: $headerBackgroundColor;
+		margin: 0;
+		padding: 10px;
 		text-align: center;
 }
 
-.wrap {
-	display: flex;
+footer {
+	padding: 50px;
 }
 
-#configurator {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	min-width: 1000px;
+#configurator, #autoForm, .model-summary, .chassisItem {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #imgHolder, #chassisSelector {
 	text-align: center;
 	margin: 10px;
-	border: 1px solid #000;
 }
 
-#imgHolder {
-	height: 500px;
-}
-
-#imgHolder img {
-	height: inherit;
-	border: 1px solid #000;
-}
-
-.model-summary {
-	display: inline-block;
-	width: 260px;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	border: 1px solid #000;
-	padding: 5px;
-	background-color: rgba(50, 100, 250, 0.1);
-}
-
-#chassisSelector {
-	display: flex;
-	justify-content: center;
-}
-
-#chassisSelector img {
-	width: 100px
-}
-
-#chassisSelector img:hover {
+label {
 	cursor: pointer;
 }
 
-.chassisItem {
-	border: 1px solid #000;
-}
+.wrap {
+	display: flex;
+	justify-content: center;
 
-#autoForm {
-	display: inline-block;
-	border: 1px solid #000;
-	min-width: 500px;
+	#autoForm {
+		display: inline-block;
+		min-width: 200px;
+		margin: 20px 10px;
+
+		.form-block {
+			margin: 5px 0px;
+		}
+
+		.CPU, .GPU, .SSD {
+			padding: 10px;
+		}
+	}
+
+	#configurator {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 1000px;
+		min-width: 860px;
+		margin: 20px 10px;
+
+		#imgHolder {
+			height: 500px;
+
+			img {
+				height: inherit;
+			}
+		}
+
+		.model-summary {
+			display: inline-block;
+			width: 260px;
+			height: 350px;
+			position: absolute;
+			top: 65px;
+			right: 20px;
+			background-color: #fff;
+
+			.model-name {
+				text-align: center;
+			}
+
+			#modelSpecs {
+				padding: 10px;
+				height: 180px;
+			}
+
+			#modelPrice, #modelPriceUSD {
+				text-align: center;
+				margin: 10px;
+				font-size: 1.5em;
+				color: #ff0000;
+			}
+
+			.button {
+				width: 150px;
+				text-align: center;
+				font-size: 1.5em;
+				background-color: #0077b5;
+				color: $headerTextColor;
+				padding: 10px;
+				margin: 0px auto;
+				border-radius: 5px;
+
+				&:hover {
+					background-color: #00acee;
+					cursor: pointer;
+				}
+			}
+		}
+
+		#chassisSelector {
+			display: flex;
+			justify-content: center;
+
+			.chassisItem {
+				margin: 0 10px;
+				border: 1px solid #fff;
+
+				&:hover {
+					border: 1px solid $headerBackgroundColor;
+				}
+
+				img {
+					width: 100px;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
 }

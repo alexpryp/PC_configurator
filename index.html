@@ -3,109 +3,108 @@
 
 <head>
   <meta charset="utf-8">
-  <title>jQuery Атрибуты image src</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <title>Конфигуратор ПК</title>
+  <mta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<h1 id="top-header">jQuery Атрибуты image src</h1>
+	<h1 id="top-header">Конфигуратор ПК</h1>
 
-	<h2>Изображение и атрибуты</h2>
+	<h2>Кастомизируйте свой ПК, подобрав желаемый корпус, процессор, графический адаптер и твердотельный накопитель</h2>
 
 	<div class="wrap">
 		<form action="" id="autoForm">
-		<h2>Конфигурация ПК</h2>
-		<div class="CPU">
-			<h4>Процессор</h4>
-			<div class="form-block">
-				<input type="radio" name="cpu" id="BX80684I59600KF" value="7700" checked>
-				<label for="BX80684I59600KF">Intel Core i5-9600KF (BX80684I59600KF)</label>
+			<h2>Конфигурация ПК</h2>
+			<div class="CPU">
+				<h4>Процессор</h4>
+				<div class="form-block">
+					<input type="radio" name="cpu" id="BX80684I59600KF" value="7700" checked>
+					<label for="BX80684I59600KF">Intel Core i5-9600KF (BX80684I59600KF)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="cpu" id="BX80684I79700K" value="11700">
+					<label for="BX80684I79700K">Intel Core i7-9700K (BX80684I79700K)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="cpu" id="BX80673I99960X" value="45800">
+					<label for="BX80673I99960X">Intel Core i9-9960X (BX80673I99960X)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="cpu" id="100-100000022BOX" value="7800">
+					<label for="100-100000022BOX">AMD Ryzen 5 3600X (100-100000022BOX)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="cpu" id="100-100000025BOX" value="12600">
+					<label for="100-100000025BOX">AMD Ryzen 7 3800X (100-100000025BOX)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="cpu" id="100-100000051BOX" value="40500">
+					<label for="100-100000051BOX">AMD Ryzen 9 3950X (100-100000051BOX)</label>
+				</div>
 			</div>
-			<div class="form-block">
-				<input type="radio" name="cpu" id="BX80684I79700K" value="11700">
-				<label for="BX80684I79700K">Intel Core i7-9700K (BX80684I79700K)</label>
+			<div class="GPU">
+				<h4>Графический адаптер</h4>
+				<div class="form-block">
+					<input type="radio" name="gpu" id="RX5700XT-8G" value="14185" checked>
+					<label for="RX5700XT-8G">ASUS RX5700XT-8G</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="gpu" id="GV-N2070AORUS-8GC" value="17809">
+					<label for="GV-N2070AORUS-8GC">GIGABYTE GeForce RTX 2070 8G AORUS (GV-N2070AORUS-8GC)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="gpu" id="GV-RXVEGA64-8GD-B" value="22800">
+					<label for="GV-RXVEGA64-8GD-B">GIGABYTE Radeon RX VEGA 64 8G (GV-RXVEGA64-8GD-B)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="gpu" id="GV-N2080WF3OC-8GC" value="24900">
+					<label for="GV-N2080WF3OC-8GC">GIGABYTE GeForce RTX 2080 WINDFORCE OC 8G (GV-N2080WF3OC-8GC)</label>
+				</div>
 			</div>
-			<div class="form-block">
-				<input type="radio" name="cpu" id="BX80673I99960X" value="45800">
-				<label for="BX80673I99960X">Intel Core i9-9960X (BX80673I99960X)</label>
+			<div class="SSD">
+				<h4>SSD</h4>
+				<div class="form-block">
+					<input type="radio" name="ssd" id="MZ-76P1T0BW" value="8950" checked>
+					<label for="MZ-76P1T0BW">Samsung 860 PRO 1 TB (MZ-76P1T0BW)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="ssd" id="MZ-76P2T0BW" value="15209">
+					<label for="MZ-76P2T0BW">Samsung 860 PRO 2 TB (MZ-76P2T0BW)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="ssd" id="MZ-75E4T0BW" value="34165">
+					<label for="MZ-75E4T0BW">Samsung 850 EVO 4 TB (MZ-75E4T0BW)</label>
+				</div>
 			</div>
-			<div class="form-block">
-				<input type="radio" name="cpu" id="100-100000022BOX" value="7800">
-				<label for="100-100000022BOX">AMD Ryzen 5 3600X (100-100000022BOX)</label>
-			</div>
-			<div class="form-block">
-				<input type="radio" name="cpu" id="100-100000025BOX" value="12600">
-				<label for="100-100000025BOX">AMD Ryzen 7 3800X (100-100000025BOX)</label>
-			</div>
-			<div class="form-block">
-				<input type="radio" name="cpu" id="100-100000051BOX" value="40500">
-				<label for="100-100000051BOX">AMD Ryzen 9 3950X (100-100000051BOX)</label>
-			</div>
-		</div>
-		<div class="GPU">
-			<h4>Графический адаптер</h4>
-			<div class="form-block">
-				<input type="radio" name="gpu" id="RX5700XT-8G" value="14185" checked>
-				<label for="RX5700XT-8G">ASUS RX5700XT-8G</label>
-			</div>
-			<div class="form-block">
-				<input type="radio" name="gpu" id="GV-N2070AORUS-8GC" value="17809">
-				<label for="GV-N2070AORUS-8GC">GIGABYTE GeForce RTX 2070 8G AORUS (GV-N2070AORUS-8GC)</label>
-			</div>
-			<div class="form-block">
-				<input type="radio" name="gpu" id="GV-RXVEGA64-8GD-B" value="22800">
-				<label for="GV-RXVEGA64-8GD-B">GIGABYTE Radeon RX VEGA 64 8G (GV-RXVEGA64-8GD-B)</label>
-			</div>
-			<div class="form-block">
-				<input type="radio" name="gpu" id="GV-N2080WF3OC-8GC" value="24900">
-				<label for="GV-N2080WF3OC-8GC">GIGABYTE GeForce RTX 2080 WINDFORCE OC 8G (GV-N2080WF3OC-8GC)</label>
-			</div>
-		</div>
-		<div class="SSD">
-			<h4>SSD</h4>
-			<div class="form-block">
-				<input type="radio" name="ssd" id="MZ-76P1T0BW" value="8950" checked>
-				<label for="MZ-76P1T0BW">Samsung 860 PRO 1 TB (MZ-76P1T0BW)</label>
-			</div>
-			<div class="form-block">
-				<input type="radio" name="ssd" id="MZ-76P2T0BW" value="15209">
-				<label for="MZ-76P2T0BW">Samsung 860 PRO 2 TB (MZ-76P2T0BW)</label>
-			</div>
-			<div class="form-block">
-				<input type="radio" name="ssd" id="MZ-75E4T0BW" value="34165">
-				<label for="MZ-75E4T0BW">Samsung 850 EVO (MZ-75E4T0BW)</label>
-			</div>
-		</div>
-	</form>
+		</form>
 
-	<div id="configurator">
-		<div id="imgHolder" class="imgHolder">
-			<img src="img/chassis/Thermaltake Versa H13 Black_Win (CA-1D3-00S1WN-00).jpg" alt="Chassis">
-		</div>
+		<div id="configurator">
+			<h2>Выберите корпус</h2>
+			<div id="imgHolder" class="imgHolder">
+				<img src="img/chassis/Thermaltake Versa H13 Black_Win (CA-1D3-00S1WN-00).jpg" alt="Chassis">
+			</div>
 
-		<div class="model-summary">
-			<div class="model-name">Power Computer</div>
-			<div id="modelSpecs" class="model-specs"></div>
-			<div id="modelPrice" class="model-price"></div>
-			<div id="modelPriceUSD" class="model-price"></div>
-			<div class="button">Заказать</div>
-		</div>
+			<div id="chassisSelector" class="chassisSelector">
+				<div class="chassisItem chassis1"><img src="img/chassis/Thermaltake Versa H13 Black_Win (CA-1D3-00S1WN-00).jpg" alt="CA-1D3-00S1WN-00" data-flag="1" data-price="1500" data-model="Thermaltake Versa H13 Black_Win (CA-1D3-00S1WN-00)"></div>
+				<div class="chassisItem chassis2"><img src="img/chassis/Thermaltake Versa C22 RGB (CA-1G9-00M1WN-00).jpg" alt="CA-1G9-00M1WN-00" data-flag="0" data-price="2000" data-model="Thermaltake Versa C22 RGB (CA-1G9-00M1WN-00)"></div>
+				<div class="chassisItem chassis3"><img src="img/chassis/Chieftec Stallion II (GP-02B-OP).jpg" alt="GP-02B-OP" data-flag="0" data-price="3000" data-model="Chieftec Stallion II (GP-02B-OP)"></div>
+				<div class="chassisItem chassis4"><img src="img/chassis/Cooler Master Trooper SE (SGC-5000-KWN2).jpg" alt="SGC-5000-KWN2" data-flag="0" data-price="5000" data-model="Cooler Master Trooper SE (SGC-5000-KWN2)"></div>
+				<div class="chassisItem chassis5"><img src="img/chassis/Fractal Design Define R6 USB-C Black TG (FD-CA-DEF-R6C-BK-TGL).jpg" alt="FD-CA-DEF-R6C-BK-TGL" data-flag="0" data-price="5500" data-model="Fractal Design Define R6 USB-C Black TG (FD-CA-DEF-R6C-BK-TGL)"></div>
+				<div class="chassisItem chassis6"><img src="img/chassis/Thermaltake Core P90 Tempered Glass Edition (CA-1J8-00M1WN-00).jpg" alt="CA-1J8-00M1WN-00" data-flag="0" data-price="6500" data-model="Thermaltake Core P90 Tempered Glass Edition (CA-1J8-00M1WN-00)"></div>
+				<div class="chassisItem chassis7"><img src="img/chassis/Thermaltake Level 20 GT RGB Plus (CA-1K9-00F1WN-01).jpg" alt="CA-1K9-00F1WN-01" data-flag="0" data-price="9800" data-model="Thermaltake Level 20 GT RGB Plus (CA-1K9-00F1WN-01)"></div>
+			</div>
 
-		<div id="chassisSelector" class="chassisSelector">
-			<div class="chassisItem chassis1"><img src="img/chassis/Thermaltake Versa H13 Black_Win (CA-1D3-00S1WN-00).jpg" alt="CA-1D3-00S1WN-00" data-flag="1" data-price="1500" data-model="Thermaltake Versa H13 Black_Win (CA-1D3-00S1WN-00)"></div>
-			<div class="chassisItem chassis2"><img src="img/chassis/Thermaltake Versa C22 RGB (CA-1G9-00M1WN-00).jpg" alt="CA-1G9-00M1WN-00" data-flag="0" data-price="2000" data-model="Thermaltake Versa C22 RGB (CA-1G9-00M1WN-00)"></div>
-			<div class="chassisItem chassis3"><img src="img/chassis/Chieftec Stallion II (GP-02B-OP).jpg" alt="GP-02B-OP" data-flag="0" data-price="3000" data-model="Chieftec Stallion II (GP-02B-OP)"></div>
-			<div class="chassisItem chassis4"><img src="img/chassis/Cooler Master Trooper SE (SGC-5000-KWN2).jpg" alt="SGC-5000-KWN2" data-flag="0" data-price="5000" data-model="Cooler Master Trooper SE (SGC-5000-KWN2)"></div>
-			<div class="chassisItem chassis5"><img src="img/chassis/Fractal Design Define R6 USB-C Black TG (FD-CA-DEF-R6C-BK-TGL).jpg" alt="FD-CA-DEF-R6C-BK-TGL" data-flag="0" data-price="5500" data-model="Fractal Design Define R6 USB-C Black TG (FD-CA-DEF-R6C-BK-TGL)"></div>
-			<div class="chassisItem chassis6"><img src="img/chassis/Thermaltake Core P90 Tempered Glass Edition (CA-1J8-00M1WN-00).jpg" alt="CA-1J8-00M1WN-00" data-flag="0" data-price="6500" data-model="Thermaltake Core P90 Tempered Glass Edition (CA-1J8-00M1WN-00)"></div>
-			<div class="chassisItem chassis7"><img src="img/chassis/Thermaltake Level 20 GT RGB Plus (CA-1K9-00F1WN-01).jpg" alt="CA-1K9-00F1WN-01" data-flag="0" data-price="9800" data-model="Thermaltake Level 20 GT RGB Plus (CA-1K9-00F1WN-01)"></div>
+			<div class="model-summary">
+				<div class="model-name"><h3>Power Computer</h3></div>
+				<div id="modelSpecs" class="model-specs"></div>
+				<div id="modelPrice" class="model-price"></div>
+				<div id="modelPriceUSD" class="model-priceUSD"></div>
+				<div class="button">Заказать</div>
+			</div>
 		</div>
-
-	</div>
 	</div>
 	
-	
+	<footer>~@~</footer>
   
 	<link rel="stylesheet" href="libs/normalize.css">
 	<link rel="stylesheet" href ="dist/css/main.css">
