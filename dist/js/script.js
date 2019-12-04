@@ -11,8 +11,9 @@ $('document').ready(function () {
   var $chassisImgHolder = $('#imgHolder img');
   var srcValue = $chassisImgHolder.attr('src'); // getting currency exchange rate
 
-  var currencyUrl = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json';
-  var uahUsdRate = 0; //declare global functions
+  var currencyUrl = 'https://old.bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json'; //'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json'
+
+  var uahUsdRate = 24; //declare global functions
   //function that calculates the price in UAH
 
   function calculatePrice() {

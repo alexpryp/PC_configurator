@@ -3,7 +3,7 @@ const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify'); //JavaScript компрессор
 const del = require('del'); //удаляет указанные файлы и директории
 const babel = require('gulp-babel');
 

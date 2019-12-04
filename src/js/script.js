@@ -14,8 +14,10 @@ $('document').ready(function(){
 	let srcValue = $chassisImgHolder.attr('src');
 
 	// getting currency exchange rate
-	let currencyUrl = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json';
-	let uahUsdRate = 0;
+	
+	let currencyUrl = 'https://old.bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
+	//'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json'
+	let uahUsdRate = 24;
 
 
 	//declare global functions
